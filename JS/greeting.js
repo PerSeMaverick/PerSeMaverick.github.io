@@ -196,7 +196,7 @@ function onLoginSubmit(event) {
 
 function paintGreetings(player) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  if(hours === 1 || hours === 2){
+  if(hours === 1 || hours === 2 || hours === 0){
     greeting.innerText = `Good Night ${player}`;
   }else if(hours > 21 && hours < 25){
     greeting.innerText = `Good Night ${player}`;
