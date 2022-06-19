@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>MOMENTUM</title>
+  </head>
+
+  <body>
+    
+    <form class="hidden" id="login-form">
+      <input id="input1"
+      required
+      maxlength="15"
+      type="text"
+      placeholder="What is your name?"
+      />
+      <input id ="input2" type="submit" value="Login" />
+    </form>
+    
+    <!-- h1, h2 테그로 하면 window에서 위치 잡기가 어렵다.
+    => span 테그로 바꿈-->
+    <span id="greeting" class="hidden" style="font-size:60px"></span>
+    <span id="clock" style="font-size:30px;"></span>
+
+    <div id="weather">
+      <span style ="padding: 2px; font-size:20px;"></span>
+      <span style ="padding: 2px; font-size:20px;"></span>
+      <span style ="padding: 2px; font-size:15px;"></span>
+    </div>
+
+    <form id="todo-form">
+      <div>Your to-do List
+        <input id = "input3"
+          required
+          type="text"
+          style="width: 210px"
+          placeholder="Write a To do list and press enter!"
+        />
+      </div>
+    </form>
+    
+    <div>
+      <ul id="todo-list" font-color="white"></ul>
+    </div>
+
+    <div id="quotes">
+      <div id="quotePart"></div>
+      <div></div>
+    </div>
+    
+    <script src="JS/greeting.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/quotes.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+  </body>
+</html>
